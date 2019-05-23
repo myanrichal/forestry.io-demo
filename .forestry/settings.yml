@@ -9,17 +9,6 @@ sections:
   label: label
 - type: heading
   label: Content
-- type: jekyll-posts
-  label: Posts
-  create: all
-  templates:
-  - post
-- type: jekyll-pages
-  label: Pages
-  create: all
-  templates:
-  - landing-page
-  - page
 - type: directory
   path: _people
   label: People
@@ -27,6 +16,11 @@ sections:
   match: "*"
   templates:
   - person
+- type: jekyll-posts
+  label: Posts
+  create: all
+  templates:
+  - post
 - type: directory
   path: _projects
   label: Projects
@@ -34,6 +28,12 @@ sections:
   match: "*"
   templates:
   - project
+- type: jekyll-pages
+  label: Pages
+  create: all
+  templates:
+  - landing-page
+  - page
 - type: document
   path: _data/information.yml
   label: Contact Information
